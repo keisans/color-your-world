@@ -1,0 +1,12 @@
+
+<h3 class="white">Saved Colors:</h3>
+<ul id="savedColors">
+	{{#each colors}}
+	<li class="clearfix">
+		<div class="mini_swatch" style="background-color: {{this.h}}"></div>
+		<div class="text">
+		<a href="#!/c/{{this.p}}"><h2>Pantone&reg; {{this.p}}</h2></a>
+		<a href="#" class="unsaver" data-pantone="{{this.id}}">Unsave</a></div>
+	</li>
+	{{/each}}
+</ul>
